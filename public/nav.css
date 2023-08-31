@@ -1,3 +1,4 @@
+/* Navigation Bar */
 nav {
     height: 100px;
     width: 100%;
@@ -9,9 +10,9 @@ nav {
     top: 0;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    
   }
   
+  /* Logo Styling */
   .logo {
     display: flex;
     text-align: end;
@@ -22,6 +23,8 @@ nav {
     flex-direction: column;
   }
   
+  /* Write Tweet Styling */
+
   div.write-tweet {
     display: flex;
     flex-direction: column;
@@ -32,10 +35,9 @@ nav {
   span.write-new-tweet {
     font-size: 1rem;
     font-family: "Arial Bold", sans-serif;
-
   }
   
-  
+  /* Media Query for Larger Screens */
   @media only screen and (min-width: 1024px)  {
     nav {
       height: 120px;
@@ -47,6 +49,6 @@ nav {
   
     span.write-new-tweet {
       font-size: 1.5rem;
-      
     }
   }
+  
