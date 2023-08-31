@@ -1,3 +1,19 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -6,23 +22,61 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #f0f0f0;
-  padding: 10px 20px;
+  padding: 20px 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  background-color: rgb(72 118 183 / 31%);
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  background-color: rgb(72 118 183 / 31%);
 }
 
 .logo {
+  font-family: 'Bungee', sans-serif;
   font-weight: bold;
+  font-style: normal;
 }
 
 .write-tweet {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .write-new-tweet {
   margin-right: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .fa-angle-double-down {
   font-size: 14px;
+  margin-top: 5px;
+}
+
+main.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f4f1ec;
+  padding: 20px;
+}
+
+main.container p {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
