@@ -3,7 +3,7 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
- html {
+html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -33,7 +33,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
   font-style: normal;
-  background-color: rgb(72 118 183 / 31%);
+  background-color: #f4f1ec;
 }
 
 .logo {
