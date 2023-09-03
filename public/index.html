@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path-to-normalize.css">
 
 
     <!-- Meta Information -->
@@ -29,63 +28,68 @@
     <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
     
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
+ 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script src="./scripts/composer-char-counter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   
   <body>
     <!-- Top navigation bar (fixed) -->
     <nav>
       <div><span class="logo">tweeter</span></div>
+      
       <div class="write-tweet" style="direction: rtl">
         <span class="write-new-tweet"><strong>Write</strong> a new tweet</span>
-        <i class="fas fa-angle-double-down" style="color: red"></i>
+        <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
-  
+
+
     <!-- Adding the Header -->
-    <header class="profile-header">
-      <div class="user-img">
+  <header class="profile-header">
+    <div class ="user-img">
         <img class="user-img" src="/images/profile-hex.png" alt="User Avatar">
-      </div>
-      <br>
-      <div class="user-name">
+    </div>
+    <br>
+    <div class="user-name">
         <h2>Diana Lopez</h2>
-      </div>
-    </header>
-  
+    </div>
+</header>
+
     <!-- Page-specific (main) content here -->
     <main class="main-container">
-      <!-- HTML for creating a new tweet -->
-      <section class="new-tweet">
-        <h2 class="new-tweet-header">Compose Tweet</h2>
-        <!-- Error messages -->
-        <span id="error-message-empty" class="error-message-box">
-          <i class="fas fa-exclamation-triangle" style="color: red"></i>
-          Please enter text before submitting a new Tweet!
-          <i class="fas fa-exclamation-triangle" style="color: red"></i>
-        </span>
-        <span id="error-message-tooLong" class="error-message-box">
-          <i class="fas fa-exclamation-triangle" style="color: red"></i>
-          Please reduce your tweet content to less than or equal to 140 characters!
-          <i class="fas fa-exclamation-triangle" style="color: red"></i>
-        </span>
-        <!-- Tweet form -->
-        <form action="/tweets" method="POST" id="new-tweet-form">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text" placeholder="Compose your tweet"></textarea>
-          <div class="new-tweet-footer">
-            <button id="submit" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
+
       
-      <!-- HTML for displaying created tweets (rendered in client.js) -->
-      <section id="tweets-container"></section>
-    </main>
+      <!--HTML for Creating New Tweet-->
+    <section class="new-tweet">
+      <h2 class="new-tweet-header">Compose Tweet</h2>
+      <span id="error-message-empty" class="error-message-box">
+        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+        Please enter text before submitting a new Tweet!
+        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+      </span>
+      <span id="error-message-tooLong" class="error-message-box">
+        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+        Please reduce your tweet content to less than or equal to 140 characters!
+        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+      </span>
+      <form action="/tweets" method="POST" id="new-tweet-form">
+        <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+        <div class="new-tweet-footer">
+          <button id="submit" type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
+    
+    <!--HTML for displaying created tweets, rendered in client.js-->
+    <section id="tweets-container"></section>
+</main>
   </body>
   </html>
