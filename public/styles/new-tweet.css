@@ -1,9 +1,12 @@
+/*  NEW TWEETS  */
+
 .new-tweet {
     display:flex;
     flex-direction: column;
     width: 90%;
     background-color:#f4f1ec;
     font-family: sans-serif;
+    
   }
   
   #new-tweet-form {
@@ -64,6 +67,7 @@
   
   @media only screen and (min-width: 1024px) {
    .new-tweet {
-     width: 100%;
+    width: 97%;
+    margin: 2%;
+}
    } 
-  }
