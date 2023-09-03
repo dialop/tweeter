@@ -1,3 +1,5 @@
+/* NAVIGATION BAR AND PAGE LAYOUT  */
+
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
@@ -9,10 +11,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/*
- * Global layout stuff
- */
 
 nav {
   display: flex;
