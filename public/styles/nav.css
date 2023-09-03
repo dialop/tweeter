@@ -1,0 +1,54 @@
+/* Navigation Bar */
+nav {
+    height: 100px;
+    width: 100%;
+    color: #FFFF;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    display: flex;
+    text-align: end;
+    flex-wrap: wrap;
+    font-size: 1.75rem;
+    font-family: 'Bungee', sans-serif;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  /* Write Tweet Styling */
+
+  div.write-tweet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  span.write-new-tweet {
+    font-size: 1rem;
+    font-family: "Arial Bold", sans-serif;
+  }
+  
+  /* Media Query for Larger Screens */
+  @media only screen and (min-width: 1024px)  {
+    nav {
+      height: 120px;
+    }
+  
+    .logo {
+      font-size: 3rem;
+    }
+  
+    span.write-new-tweet {
+      font-size: 1.5rem;
+    }
+  }
+  
