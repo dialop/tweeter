@@ -68,17 +68,17 @@ $(document).ready(function() {
     event.preventDefault();
     const maxChar = 140;
     const $tweetText = $(event.target).find("#tweet-text");
-    const inputLength = $tweetText.val().length;
+    const textLength = $tweetText.val().length;
       
     $errorMessageEmpty.slideUp("slow");
     $errorMessageTooLong.slideUp("slow");
       
-    if (!inputLength) {
+    if (!textLength) {
       $errorMessageEmpty.slideDown("slow");
       return; // Stop execution here
     }
       
-    if (inputLength > maxChar) {
+    if (textLength > maxChar) {
       $errorMessageTooLong.slideDown("slow");
       return; // Stop execution here
     }
