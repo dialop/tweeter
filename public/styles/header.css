@@ -3,7 +3,6 @@
 .profile-header {
   width: 100%;
   height: calc(400px - 120px); /* Adjusted for nav height */
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,12 +11,12 @@
   font-family: sans-serif;
   color: white;
   padding: 10px;
-  background-color: rgb(197, 202, 120);
+  background-color: cadetblue;
 }
 
 /* Header Background Image */
 header.profile-header {
-  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png"); /* Add the path to your background image */
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png"); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,7 +32,7 @@ header.profile-header {
   max-height: 150px;
   height: auto;
   width: auto;
-  margin: 0 auto; /* Center horizontally */
+  margin: 0 auto; 
   justify-content: center;
 }
 
@@ -46,11 +45,8 @@ header.profile-header {
 /* Media Query for Larger Screens */
 @media only screen and (min-width: 1024px) {
   .profile-header {
-    margin-top: 50px; 
-    margin-left: 50px;
-    margin-right: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 250px;
+    padding-bottom: 250px;
   }
 
   .user-image {
