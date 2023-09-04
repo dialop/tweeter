@@ -63,6 +63,7 @@ body {
 .fa-angle-double-down {
   font-size: 14px;
   margin-top: 5px;
+  color: red;
 }
 
 main.container {
