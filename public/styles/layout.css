@@ -12,26 +12,25 @@ html {
   box-sizing: inherit;
 }
 
-nav {
+main {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  padding: 20px 30px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 40px;
-  font-style: normal;
-  background-color: rgb(72 118 183 / 31%);
+  background-color: #f4f1ec;
+  flex-direction: column;
+  font-family: sans-serif;
+  align-items: center;
+  padding-top: 20px;
 }
+
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
   font-style: normal;
   background-color: #f4f1ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
@@ -60,11 +59,19 @@ body {
   }
 }
 
+
+@keyframes movesUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
 .fa-angle-double-down {
   font-size: 14px;
   margin-top: 5px;
   color: red;
+  animation: movesUpDown 3s linear infinite;
 }
+
 
 main.container {
   width: 90%;
