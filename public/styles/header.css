@@ -2,16 +2,15 @@
 
 .profile-header {
   width: 100%;
-  height: calc(400px - 120px); /* Adjusted for nav height */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   font-family: sans-serif;
   color: white;
   padding: 10px;
-  background-color: cadetblue;
+  background-color: #8b0000b0;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Header Background Image */
@@ -32,28 +31,24 @@ header.profile-header {
   max-height: 150px;
   height: auto;
   width: auto;
-  margin: 0 auto; 
   justify-content: center;
 }
 
 /* User Name Styling */
 .user-name {
-  margin-top: 10px;
+  margin-top: -30px;
   font-size: 1.25rem;
 }
 
 /* Media Query for Larger Screens */
 @media only screen and (min-width: 1024px) {
   .profile-header {
-    padding-top: 250px;
-    padding-bottom: 250px;
+    margin-top: 175px;
+    margin-left: 50px;
+    margin-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
-
-  .user-image {
-    max-width: 175px;
-    max-height: 175px;
-  }
-
   .user-name {
     font-size: 1.5rem;
   }
@@ -62,7 +57,7 @@ header.profile-header {
 /* Media Query for Smaller Screens */
 @media only screen and (max-width: 1023px) {
   .profile-header {
-    padding-top: 60px; 
+    padding-top: 100px; 
     margin-top: 0px;
   }
 }

@@ -40,7 +40,7 @@
   }
   
   .user-handle {
-    color:#ced3e5;
+    color:lightsteelblue
   }
   
   .tweet-text {
@@ -64,11 +64,11 @@
   
   .tweet-response i {
     padding: 5px;
-    color: #4056A1;
+    color:darkblue;
   }
   
   .tweet-response i:hover {
-    color: darkkhaki;
+    color:#00008b4d;
   }
   
   @media only screen and (min-width: 1024px) {

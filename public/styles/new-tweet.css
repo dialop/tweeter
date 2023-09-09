@@ -29,17 +29,18 @@
     font-family: 'Bungee', sans-serif;
     font-size: 24px;
     margin-top: 5px; 
+    color: darkblue;
   }
   
   #submit {  
-    background-color: #162966;
+    background-color: indianred;
     color: white;
     border-style:groove;
     font-weight: bolder;
   }
   
   #submit:hover {  
-    background-color: lightsteelblue;
+    background-color: rgb(226, 174, 174);
   }
   
   .invalid {

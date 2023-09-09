@@ -1,16 +1,19 @@
 /* NAVIGATION BAR */
 nav {
-    height: 100px;
-    width: 100%;
-    color: #FFFF;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-  }
+  height: 100px;
+  width: 100%;
+  background-image: url(https://www.transparenttextures.com/patterns/bedge-grunge.png);
+  background-color: #8b0000b0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  z-index: 3;
+  top: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
   
   /* Logo Styling */
   .logo {
@@ -40,7 +43,7 @@ nav {
   /* Media Query for Larger Screens */
   @media only screen and (min-width: 1024px)  {
     nav {
-      height: 120px;
+      height: 90px;
     }
   
     .logo {
