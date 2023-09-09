@@ -90,6 +90,12 @@ $(document).ready(function() {
       loadTweets();
     });
   });
+
+   //---Footer Scroll Top Arrow ---//
+   $('#scroll-up').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 1000);
+  });
 });
+
   
   
