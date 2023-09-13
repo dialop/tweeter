@@ -1,12 +1,13 @@
-/* PROFILE HEADER STYLING */
-
+/* PROFILE HEADER STYLING USING SCSS */
+/* Styling Background Color Using SCSS  */
 .profile-header {
   width: 100%;
   display: flex;
   font-family: sans-serif;
   color: white;
+  height: 400px;
   padding: 10px;
-  background-color: #8b0000b0;
+  background-color: #4056A1;
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
@@ -15,7 +16,7 @@
 
 /* Header Background Image */
 header.profile-header {
-  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png"); 
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -53,11 +54,17 @@ header.profile-header {
     font-size: 1.5rem;
   }
 }
-
 /* Media Query for Smaller Screens */
 @media only screen and (max-width: 1023px) {
   .profile-header {
-    padding-top: 100px; 
-    margin-top: 0px;
+    padding-top: 100px;
+    margin-top: 11%;
   }
+}
+/* Define a Mixin for Centering Elements */
+/* Use the Mixin to Center User Images */
+.user-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

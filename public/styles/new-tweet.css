@@ -1,75 +1,73 @@
 /*  NEW TWEETS  */
-
 .new-tweet {
-    display:flex;
-    flex-direction: column;
-    width: 90%;
-    font-size: x-large;
-    background-color:#f4f1ec;
-    font-family: sans-serif;
-    
-  }
-  
-  #new-tweet-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #tweet-text {
-    background-color: #f4f1ec;
-    border: hidden;
-    border-bottom: 3px solid black;
-    margin-bottom: 5px;
-  }
-  
-  .new-tweet-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: 'Bungee', sans-serif;
-    font-size: 24px;
-    margin-top: 5px; 
-    color: darkblue;
-  }
-  
-  #submit {  
-    background-color: indianred;
-    color: white;
-    border-style:groove;
-    font-weight: bolder;
-  }
-  
-  #submit:hover {  
-    background-color: rgb(226, 174, 174);
-  }
-  
-  .invalid {
-    color: red
-  }
-  
-  .error-message-box {
-      display: flex;
-      border: 3px solid red;
-      color: red;
-      padding: 10px;
-      margin-bottom: 15px;
-      margin-top: -10px;
-      font-size: 20px;
-      font-family: sans-serif;
-      align-items: center;
-      flex-wrap: nowrap;
-      flex-direction: row;
-      justify-content: center;
-    }
-  
-  .fa-exclamation-triangle {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  
-  @media only screen and (min-width: 1024px) {
-   .new-tweet {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-size: x-large;
+  background-color: #f4f1ec;
+  font-family: sans-serif;
+}
+
+#new-tweet-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#tweet-text {
+  background-color: #f4f1ec;
+  border: hidden;
+  border-bottom: 3px solid black;
+  margin-bottom: 5px;
+}
+
+.new-tweet-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Bungee", sans-serif;
+  font-size: 24px;
+  margin-top: 5px;
+  color: darkblue;
+}
+
+#submit {
+  background-color: #4056A1;
+  color: white;
+  border-style: groove;
+  font-weight: bolder;
+}
+
+#submit:hover {
+  background-color: #17338d;
+}
+
+.invalid {
+  color: red;
+}
+
+.error-message-box {
+  display: flex;
+  border: 3px solid red;
+  color: red;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: -10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fa-exclamation-triangle {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .new-tweet {
     width: 97%;
     margin: 2%;
+  }
 }
-   } 

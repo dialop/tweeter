@@ -1,5 +1,4 @@
 /* NAVIGATION BAR AND PAGE LAYOUT  */
-
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
@@ -8,12 +7,13 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 30px;
   font-style: normal;
   background-color: #f4f1ec;
@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
   font-weight: bold;
   font-style: normal;
 }
@@ -47,7 +47,6 @@ body {
     align-items: flex-start;
   }
 }
-
 main {
   display: flex;
   width: 100%;
@@ -59,27 +58,28 @@ main {
   margin-top: 6.5%;
 }
 
-
 main.container {
   width: 90%;
   margin: 0 auto;
   background-color: #f4f1ec;
   padding: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 main.container p {
   margin: 10px 0;
   padding: 10px;
   background-color: white;
-  box-shadow: 0 2px 4px #a0675f29;
+  box-shadow: 0 2px 4px rgba(160, 103, 95, 0.1607843137);
 }
-
 
 .footer {
   display: flex;
   flex-direction: column-reverse;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #3c30979e;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgba(60, 48, 151, 0.6196078431);
   margin: 1em auto;
   width: 90%;
   flex-wrap: wrap;
@@ -94,10 +94,13 @@ footer.footer p {
 
 /* NAVIGATION BAR DOWN ARROW */
 @keyframes movesUpDown {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }
-
 .fa-angle-double-down {
   font-size: 14px;
   margin-top: 5px;
@@ -111,8 +114,9 @@ button.boucing-bottom {
   text-shadow: 3px 3px #1f2e5c;
   font-weight: 900px;
 }
+
 button.boucing-bottom {
-  background-color: #8b00002e;
+  background-color: #4056A1;
   bottom: 2.5%;
   left: 92.5%;
   width: 2.5rem;
@@ -120,6 +124,7 @@ button.boucing-bottom {
   border-radius: 2.5rem;
   border: none;
 }
+
 @keyframes bounce2 {
   0% {
     transform: translateY(-0.2rem);
