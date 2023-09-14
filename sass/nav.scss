@@ -1,0 +1,74 @@
+/* NAVIGATION BAR */
+
+/* Background Color Property to Use SASS Variables */
+$nav-background-color: #4056A1;
+
+nav {
+  height: 120px;
+  width: 100%;
+  background-image: url(https://www.transparenttextures.com/patterns/bedge-grunge.png);
+  background-color:$nav-background-color;
+  color:  #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  z-index: 3;
+  top: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+  
+  /* Logo Styling */
+  .logo {
+    display: flex;
+    text-align: end;
+    flex-wrap: wrap;
+    font-size: 1.75rem;
+    font-family: 'Bungee', sans-serif;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  /* Write Tweet Styling */
+
+  div.write-tweet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  span.write-new-tweet {
+    font-size: 1rem;
+    font-family: "Arial Bold", sans-serif;
+  }
+  
+  /* Media Query for Larger Screens */
+  @media only screen and (min-width: 1024px)  {
+    nav {
+      height: 90px;
+    }
+  
+    .logo {
+      font-size: 3rem;
+    }
+  
+    span.write-new-tweet {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* SASS Mixin Vertical Alignment */
+  @mixin vertical-align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Header Image Styling  */
+  .header-image {
+    @include vertical-align-center;
+  }
+
+  

@@ -1,0 +1,136 @@
+/* NAVIGATION BAR AND PAGE LAYOUT  */
+
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  background-color: #f4f1ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Bungee', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.write-tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.write-new-tweet {
+  margin-right: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+main {
+  display: flex;
+  width: 100%;
+  background-color: #f4f1ec;
+  flex-direction: column;
+  font-family: sans-serif;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 6.5%;
+}
+
+
+main.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f4f1ec;
+  padding: 20px;
+  display: flex;
+  flex-direction: column-reverse; 
+  align-items:center;
+}
+
+main.container p {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px #a0675f29;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #3c30979e;
+  margin: 1em auto;
+  width: 90%;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+footer.footer p {
+  display: flex;
+  justify-content: flex-start;
+  width: 97%;
+}
+
+/* NAVIGATION BAR DOWN ARROW */
+@keyframes movesUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.fa-angle-double-down {
+  font-size: 14px;
+  margin-top: 5px;
+  color: red;
+  animation: movesUpDown 3s linear infinite;
+}
+
+/* FOOTER SCROLL UP ARROW */
+button.boucing-bottom {
+  animation: bounce2 1.5s ease infinite forwards;
+  text-shadow: 3px 3px #1f2e5c;
+  font-weight: 900px;
+}
+button.boucing-bottom {
+  background-color: #4056A1;
+  bottom: 2.5%;
+  left: 92.5%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+  border: none;
+}
+@keyframes bounce2 {
+  0% {
+    transform: translateY(-0.2rem);
+  }
+  50% {
+    transform: translateY(0.2rem);
+  }
+  100% {
+    transform: translateY(-0.2rem);
+  }
+}
